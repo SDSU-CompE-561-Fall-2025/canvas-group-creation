@@ -1,0 +1,24 @@
+{
+    "name": "canvas-group-creator",
+    "version": "1.0.0",
+    "description": "Create Canvas groups from markdown project list with assigned leaders",
+    "main": "canvas-groups.js",
+    "scripts": {
+        "start": "node canvas-groups.js",
+        "test": "node -e \"console.log('Testing markdown parsing...'); require('./canvas-groups.js').parseProjectsFromMD('./project-ideas.md').then(projects => console.log('Found projects:', projects.length))\""
+    },
+    "dependencies": {
+        "node-fetch": "^2.7.0"
+    },
+    "devDependencies": {
+        "dotenv": "^16.6.1"
+    },
+    "keywords": [
+        "canvas",
+        "lms",
+        "groups",
+        "education"
+    ],
+    "author": "Your Name",
+    "license": "MIT"
+}
